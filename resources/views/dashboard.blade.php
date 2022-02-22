@@ -105,9 +105,11 @@
                                         class="delete">
                                         <img src="delete.png" alt="Bin">
                                     </button>
-                                        {{ csrf_field() }}
-                                    </form>
-                                </td>
+                                    {{ csrf_field() }}
+                                </form>
+                                <a href="https://twitter.com/share?url={{$task->description}}" onclick="window.open(this.href);return false;" name="twitter" class="logo1"><img src="twitter.png" alt="accept"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=127.0.0.1:8000" name="facebook" class="logo1"><img src="facebook.png" alt="accept"></a>
+                            </td>
                             </tr>
 
 

@@ -17,18 +17,6 @@
                     </x-jet-nav-link>
                 </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
-                    <x-jet-nav-link href="https://twitter.com/share?..." onclick="window.open(this.href);return false;">
-                        {{ __('twitter') }}
-                    </x-jet-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
-                    <x-jet-nav-link href="https://www.facebook.com/sharer/sharer.php?u=127.0.0.1:8000">
-                        {{ __('facebook') }}
-                    </x-jet-nav-link>
-                </div>
-
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
