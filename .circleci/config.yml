@@ -50,4 +50,7 @@ jobs:
       # run tests with phpunit
       - run:
           name: "Run Unit Tests"
-          command: sudo chmod 777 ./vendor/bin/phpunit tests/Unit
+          command: |
+            sudo chmod 777 ./vendor/bin/phpunit tests/Unit
+            ./vendor/bin/phpunit tests/Unit
+          
