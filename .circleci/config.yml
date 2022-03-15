@@ -51,6 +51,6 @@ jobs:
       - run:
           name: "Run Unit Tests"
           command: |
-            sudo chmod 777 ./vendor/bin/phpunit tests/Unit tests/Feature
-            ./vendor/bin/phpunit tests/Unit tests/Feature
+            ./vendor/bin/phpunit
+            
           
