@@ -39,7 +39,7 @@
             .Bg{
                 padding: 10px;
                 width: 150px;
-                position: fixed ;
+                position: relative;
                 bottom: 10%;
                 left: 27.5%;
                 width :45%;
@@ -71,9 +71,9 @@
         </style>
        </head> 
     <body class="antialiased">
-    <video autoplay muted loop id="myVideo">
+    <!-- <video autoplay muted loop id="myVideo">
         <source src="beach.mp4" type="video/mp4">
-        </video>
+        </video> -->
         <div class="Bg">
             <div class="py-12">
                 <div class="sm:rounded-lg p-5">
