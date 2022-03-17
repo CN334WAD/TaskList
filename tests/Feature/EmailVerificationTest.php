@@ -47,7 +47,7 @@ class EmailVerificationTest extends TestCase
             now()->addMinutes(60),
             ['id' => $user->id, 'hash' => sha1($user->email)]
         );
-
+        
         $response = $this->actingAs($user)->get($verificationUrl);
 
         Event::assertDispatched(Verified::class);

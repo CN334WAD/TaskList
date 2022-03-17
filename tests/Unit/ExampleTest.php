@@ -17,7 +17,7 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
-
+    # unit test of name email pass
     public function testUserCreation()
     {
         $user = new User([
