@@ -1,13 +1,14 @@
 version: 2
 jobs:
   build:
+    
     docker:
       # Specify the version you desire here
       - image: circleci/php:7.4-node-browsers
 
     steps:
       - checkout
-
+      
       - run:
           name: "Prepare Environment"
           command: |
@@ -35,12 +36,13 @@ jobs:
             - ./vendor
 
       # prepare the database
+
       - run:
           name: "Create Environment file and generate app key"
           command: |
             mv .env.testing .env
             php artisan key:generate
-
+      
       - run:
           name: "Create database and run migration"
           command: |
