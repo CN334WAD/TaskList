@@ -18,7 +18,7 @@ class ExampleTest extends TestCase
     }
 
     # unit test of name email pass
-    public function UserCreation()
+    public function testUserCreation()
     {
         $user = new User([
             'name' => "Test User",
