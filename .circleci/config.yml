@@ -1,15 +1,14 @@
 version: 2
 jobs:
   build:
-    #docker linux for create workspace
+    
     docker:
-      #ติดตั้ง Enviroment
       # Specify the version you desire here
       - image: circleci/php:7.4-node-browsers
 
     steps:
       - checkout
-      #run install by linux sudo
+      
       - run:
           name: "Prepare Environment"
           command: |
@@ -37,13 +36,13 @@ jobs:
             - ./vendor
 
       # prepare the database
-      #Run test in CICD
+
       - run:
           name: "Create Environment file and generate app key"
           command: |
             mv .env.testing .env
             php artisan key:generate
-      #Run test in Database
+      
       - run:
           name: "Create database and run migration"
           command: |
