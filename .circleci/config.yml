@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    #docker linux for create workspace
     docker:
       #ติดตั้ง Enviroment
       # Specify the version you desire here
