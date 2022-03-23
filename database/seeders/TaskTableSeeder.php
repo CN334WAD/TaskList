@@ -16,12 +16,13 @@ class TaskTableSeeder extends Seeder
     {
         Task::truncate();
 
-        Task::create([
-
-            "description" => "Hardik Savani",
-            "user_id" => 1,
-
-        ]);
+        for ($i=1; $i < 10; $i++) { 
+            Task::create([
+                "description" => "Hardik Savani",
+                "user_id" => $i,
+            ]);
+        }
+        
     }
 }
 
