@@ -52,7 +52,7 @@ jobs:
       - run:
           name: "Run Seeder"
           command: |
-            php artisan db:seed
+            php artisan db:seed --class=DatabaseSeeder
 
       # run tests with phpunit
       - run:
